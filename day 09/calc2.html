@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>총점과 평균 구하기</title>
+</head>
+<body>
+    <script>
+        //과목의 총점과 평균 계산하기
+        //입력받아 계산하기
+        var mathScore = prompt("수학 점수를 입력하세요");
+        var engScore = prompt("영어 점수를 입력하세요");
+        var sum, avg;
+
+        //합계, 평균(합계/개수)
+        //문자를 숫자로 바꾸는 함수 - parseInt()
+        sum = parseInt(mathScore) + parseInt(engScore);
+        avg = sum / 2;
+
+        //출력
+        document.write("합계: " + sum + "<br>");
+        document.write("평균: " + avg + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자 예제</title>
+</head>
+<body>
+    <script>
+        var n1 = 10, n2 = 20;
+        var value;
+
+        //논리 연산자 - 비교 연산(조건)이 둘 이상일 때
+        // && - 둘 모두 참인 경우 참, ||- 둘 중 하나가 참이면 참 , ! - 참이면 거짓, 거짓이면 참
+        value = (n1 > n2) && (n1 === n2);
+        console.log(value);  //false
+
+        value = (n1 > n2) || (n1 !== n2);
+        console.log(value);  //ture
+
+        value = !(n1 > n2) 
+        console.log(value);  //ture
+
+
+    </script>
+</body>
+</html>

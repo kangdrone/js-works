@@ -1,0 +1,35 @@
+수업 일정 * 추후 일정 바뀔 수 있으니 주의 *
+8.10 ~ 8.20 : HTML + CSS
+8.23 ~ 8.31 : javascript
+9.1 ~ 9.21 : python + DB (SQL)
+9.27 ~ 10.1 : HTML + CSS + javascript (자기소개 페이지 만들기)
+서버 - 닷홈
+10.4 ~ 10.21 : 장고 (Django) 프레임워크 / 회원형 게시판
+서버 - 파이썬애니웨어
+
+자료형 명령어
+number - 숫자(정수,실수)
+name - 이름
+temp - 변환
+
+== 기본 연산자 ==
+대입 연산자 - =
+연결 연산자 - +
+산술 연산자 - +, -, *, /, %, ++, --
+비교 연산자 - >, <, ===, !==
+논리 연산자 - &&, ||(shift키 + <backspace키 바로 아래>\\), !
+
+
+
+cd :/webDev
+cd js works
+git init
+git status
+git add *
+git commit -m "day 09 자바스크립트"
+git push
+<name>뜰 경우
+git remoto add origin (깃허브 저장소 주소)
+git branch
+(master<녹색>)
+git push -u origin master

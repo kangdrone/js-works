@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수 교환하기</title>
+</head>
+<body>
+    <script>
+        var x = 0;
+        var y = 1;
+        var temp; //교환을 위한 임시 변수 선언 
+
+        document.write("교환 전<br>")
+        document.write("x =" + x + ", y =" + y);
+        document.write("<br>================<br>")
+
+        // 교환 처리
+        temp = y;
+        y = x;
+        x = temp;
+
+        document.write("교환 후<br>")
+        document.write("x =" + x + ", y =" + y);
+    </script>
+</body>
+</html>
