@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역변수의 유효 범위</title>
+</head>
+<body>
+    <script>
+        //1 증가하는 함수 정의
+        var x = 1; 
+            // 전역변수(전체로 영향을 미치는 변수, 값을 공유)
+            // 프로그램이 종료해야 소멸
+            function oneUp(){
+            x++;
+            return x;
+        }
+
+        document.write("<br>결과값 : " + oneUp());  //x는 값을 반환하고 메모리에서 소멸
+        document.write("<br>결과값 : " + oneUp());
+        document.write("<br>결과값 : " + oneUp());
+
+        document.write("<br>x =" + x);
+        // x = 1;
+        // document.write("<br>x =" + x);
+
+    </script>
+</body>
+</html>

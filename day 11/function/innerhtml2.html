@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML 속성 예제</title>
+</head>
+<body>
+    <h1>My Web Page</h1>
+    <!-- <p id="myp" onclick="myFunc()">이것은 P 태그입니다.</p> -->
+    <!-- <p id="myp" onmouseover="myFunc()">이것은 P 태그입니다.</p> -->
+    <button onclick="myFunc()">확인</button>
+    <p id="myp"></p>
+
+    <script>
+        function myFunc(){
+            document.getElementById("myp").innerHTML= "내용이 추가됩니다!";
+        }
+    </script>
+</body>
+</html>

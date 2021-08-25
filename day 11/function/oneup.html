@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역변수의 유효 범위</title>
+</head>
+<body>
+    <script>
+        //1 증가하는 함수 정의
+        function oneUp(){
+            var x = 1;  
+            //지역변수(local variable)
+            // 함수(블럭인) 호출 후 소멸
+            x++;
+            return x;
+        }
+
+        document.write(oneUp() + '<br>');  //x는 값을 반환하고 메모리에서 소멸
+        document.write(oneUp() + '<br>');
+        document.write(oneUp() + '<br>');
+
+        // document.write(x);  //x라는 변수는 없다.
+    </script>
+</body>
+</html>
