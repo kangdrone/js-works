@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문 예제</title>
+</head>
+<body>
+    <script>
+        // 반복조건문 - if ~ break를 사용, 1부터 10까지 더하기
+        var n = 1;
+        var sum = 0;
+        while(true){
+            sum += n;  //n=10 합계
+            n++;
+            if(n > 10){  //n=11
+                break;
+            }
+        }
+        document.write("합계 : " + sum);
+    </script>
+</body>
+</html>

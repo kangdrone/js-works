@@ -8,16 +8,42 @@
 서버 - 파이썬애니웨어
 
 자료형 명령어
+alert - 알림창
+document.write - 출력
 number - 숫자(정수,실수)
 name - 이름
 temp - 변환
+rank - 순위
+자료형 명령어 종류
+for문
+if else문
+
+* font 크기
+  em - 기본크기 16px의 상대크기
+  rem - 기본크기 16px의 상대크기
+
+if ~ else if ~ else 형식
+
+
+switch 형식
+switch(??)
+case 숫자:
+document.write(??);
+break;
 
 == 기본 연산자 ==
 대입 연산자 - =
 연결 연산자 - +
 산술 연산자 - +, -, *, /, %, ++, --
-비교 연산자 - >, <, ===, !==
+비교 연산자 - >, <, ===, !== (문자일때는 == 허용)
 논리 연산자 - &&, ||(shift키 + <backspace키 바로 아래>\\), !
+
+== 복합 대입 연산자 ==
++=  -  (val += 10)
+-=  -  (val -= 10)
+*=  -  (val *= 10)
+/=  -  (val /= 10)
+%=  -  (val %= 10)
 
 
 
@@ -29,7 +55,26 @@ git add *
 git commit -m "day 09 자바스크립트"
 git push
 <name>뜰 경우
-git remoto add origin (깃허브 저장소 주소)
+git remote add origin (깃허브 저장소 주소)
 git branch
 (master<녹색>)
 git push -u origin master
+
+
+
+cd c:/webDev
+git status
+git add *
+git commit -m " 파일명 "
+git push
+
+
+그 외 명령어
+     cd.. (전 파일로 돌아가기)
+     git config - ? ? ?
+
+     github주소/내 아이디
+
+     깃 허브 첫날
+     1.git clone 깃허브주소
+     2.git pull

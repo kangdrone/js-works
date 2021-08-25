@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if - else문 예제</title>
+</head>
+<body>
+    <script>
+        /* 3의 배수이면 "3의 배수입니다"를 출력하고, 아니면 "3의 배수가 아닙니다."를 출력하는 프로그램 */
+        
+        var num = prompt("숫자를 입력해주세요.");
+
+        if( num == null){ //오류 처리
+            document.write("입력이 취소되었습니다.")
+        }
+        else{ // (num !== null)
+        if(num % 3 === 0){
+            document.write("3의 배수입니다.");
+        }
+        else{
+            document.write("3의 배수가 아닙니다.");
+        }
+    }
+    </script>
+</body>
+</html>

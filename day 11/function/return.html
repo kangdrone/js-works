@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return이 있는 함수</title>
+</head>
+<body>
+    <script>
+        //반환값이 있는 함수 - return 사용
+        function add(x, y){
+            var sum = x + y;
+            return sum;
+        }
+
+        //변수이름 = function(){}
+        var square = function square(x){
+            return x * x;
+        }
+
+        var result = add(10, -5);
+        var num = square(5);
+
+        document.write("<br>합계 : " + result);
+        document.write("<br>결과 값 : " + 16);
+    </script>
+</body>
+</html>

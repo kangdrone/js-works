@@ -1,0 +1,15 @@
+#container{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+table, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    color: coral;
+}
