@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 보이기, 숨기기</title>
+    <style>
+        button{
+            margin-top: 15px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./images/bear.jpg" alt ="곰인형" id="pic">
+    </div>
+    <button onclick="hide()">숨기기</button>
+    <button onclick="Show()">보이기</button>
+    <script>
+        function hide(){
+            document.getElementById("pic").style.display = "none" ;
+        }
+        function show(){
+            document.getElementById("pic").style.display = "block" ;
+        }
+    </script>
+</body>
+</html>

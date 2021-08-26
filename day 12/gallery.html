@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 넘기기 프로그램</title>
+    <style>
+        #wrap{
+            width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>이미지 넘기기</h2>
+        <img onclick="prevGallery()" src="./images/left_btn.png" alt="왼쪽 버튼">
+        <img src="./images/img1.jpg" alt="새" id="pic">
+        <img  onclick="nextGallery()" src="./images/right_btn.png" alt="오른쪽 버튼">
+    </div>
+    <script src="./js/gallery.js"></script>
+</body>
+</html>

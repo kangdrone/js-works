@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById() 함수 예제</title>
+</head>
+<body>
+    <h2>계산 결과</h2>
+    <p id="demo"></p>
+    <script>
+        //제곱 수 구하는 함수 정의
+        function square(x){
+            return x * x;
+        }
+
+        document.getElementById('demo').innerHTML = square(4);
+    </script>
+</body>
+</html>

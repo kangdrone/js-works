@@ -70,6 +70,7 @@ git push
 
 
 그 외 명령어
+     mkdir (새 파일명)  파일 새로 만들기
      cd.. (전 파일로 돌아가기)
      git config - ? ? ?
 
