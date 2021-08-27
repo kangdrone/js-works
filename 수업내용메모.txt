@@ -45,6 +45,12 @@ break;
 /=  -  (val /= 10)
 %=  -  (val %= 10)
 
+배열 관련 명령어
+pop - 맨 뒤 요소 삭제
+push - 맨 뒤에 요소 추가
+indexOf() - 앞에서 찾음
+lastindexOf() - 뒤에서 찾음
+
 
 
 cd :/webDev
@@ -79,3 +85,8 @@ git push
      깃 허브 첫날
      1.git clone 깃허브주소
      2.git pull
+
+
+     https://github.com/sugu2100/(파일명)
+     학원 강사님 깃허브 주소
+

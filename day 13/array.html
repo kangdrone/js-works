@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf - 8">
+        <title>배열(Array) 선언과 사용</title>
+    </head>
+    <body>
+        <script>
+            //1. 배열의 선언 : []안에 저장하여 생성
+            var animal = ['dog', 'cat', 'cow', 'cat', 'horse'];
+            
+            //인덱싱 - 요소에 접근
+            document.write(animal[0] + '<br>');
+            document.write(animal[1] + '<br>');
+            document.write(animal[2] + '<br>');
+
+            //배열의 길이(크기) - 배열이름.length
+            document.write("배열의 길이 : " + animal.length + '개<br>');
+
+            //전체 출력
+            for(var i = 0; i < animal.length; i++){
+                document.write(animal[i] + ' ');
+            }
+            //dog, cat, cow, horse
+
+            document.write('<br>')
+            //2. 배열의 선언 : Array 객체를 사용
+            var fruit = new Array(3);
+            fruit[0] = "사과";
+            fruit[1] = "참외";
+            fruit[2] = "바나나";
+
+            document.write(fruit);
+
+        </script>
+    </body>
+</html>

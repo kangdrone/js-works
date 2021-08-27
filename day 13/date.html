@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체 사용하기</title>
+</head>
+<body>
+    <script>
+        var today = new Date();  //Date 객체의 인스턴스 생성
+
+        document.write("<br>==== 날짜 ==== <br>");
+        document.write("현재 시각은 " + today + '<br>');
+        document.write("현재 시각은 " + today.toLocaleString() + '<br>');
+        document.write("현재 연도 : " + today.getFullYear() + '년<br>');
+        document.write("현재 연도 : " + (today.getMonth()+ 1) + '월<br>');
+        document.write("현재 연도 : " + today.getDate() + '일<br>');
+
+        document.write("<br>==== 날짜 ==== <br>");
+        document.write("현재 시각은 " + today.toLocaleTimeString() + '<br>');
+        document.write("현재 시 : " + today.getHours() + '시<br>');
+        document.write("현재 분 : " + (today.getMinutes()+ 1) + '분<br>');
+        document.write("현재 초 : " + today.getSeconds() + '초<br>');
+
+        document.write("<br>==== 현재까지의 시간 ==== <br>");
+        
+    </script>
+</body>
+</html>

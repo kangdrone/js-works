@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 연산</title>
+</head>
+<body>
+    <script>
+        var numbers = [];  //길이가 0인 numbers 배열 선언
+        var sum = 0;  //합계
+        //저장
+        numbers[0] = 10;
+        numbers[1] = 40;
+        numbers[2] = 70;
+
+        //1번 인덱스 값 출력
+        document.write(numbers[1] + '<br>');
+
+        //전체 출력
+        for(var i = 0; i < numbers.length; i++){
+            document.write(numbers[i] + ' ');
+        }
+        document.write('<br>')
+
+        //더하기
+        document.write(numbers[0] + numbers[1] +'<br>');
+
+        //전체 합계
+        for(var i = 0; i < numbers.length; i++){
+            sum += numbers[i];  //sum = sum + unmbers[i]
+        }
+        document.write("합계 " + sum);
+
+
+    </script>
+</body>
+</html>

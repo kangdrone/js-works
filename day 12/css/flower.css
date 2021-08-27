@@ -1,0 +1,15 @@
+#item{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.show{
+    position: absolute;
+    top: 275px;
+    left: 20px;
+}
+.text{
+    width: 400px;
+    line-height: 1.7em;
+    display: none;
+}

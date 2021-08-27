@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 계산 프로그램</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            border-radius: 50%;
+            text-align: center;
+            margin: 50px auto;
+            background-color: rgb(149, 221, 221);
+        }
+        h2{
+            padding-top: 75px;
+        }
+        p{
+            line-height: 2;
+        }
+        .access{
+            font-size: 2.0em;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>지금까지 몇 일?</h2>
+        <p>입사 이후 <span id="time" class="access"></span>일 지났습니다.<br>
+        수고하셨습니다.
+        </p>
+    </div>
+    <script>
+        var day1 = new Date('2021-8-10');
+        var today = new Date();
+
+        var passedTime = today.getTime() - day1.getTime();
+        //밀리초를 '일'로 환산
+        passedTime = Math.round(passedTime/(24*60*60*1000));
+        document.getElementById('time').innerHTML = passedTime
+    </script>
+</body>
+</html>

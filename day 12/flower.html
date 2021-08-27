@@ -5,23 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>버튼 이벤트</title>
-    <style>
-        #item{
-            width: 500px;
-            margin: 0 auto;
-            position: relative;
-        }
-        .show{
-            position: absolute;
-            top: 275px;
-            left: 20px;
-        }
-        .text{
-            width: 400px;
-            line-height: 1.7em;
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/flower.css">
 </head>
 <body>
     <div id="item">
@@ -35,23 +19,7 @@
             </p>
             <button onclick="hidetext()">상세 설명 닫기</button>
         </div>
-        <script>
-            function showtext(){
-                //설명글 보이기
-                document.getElementById("desc").style.display = "block";
-
-                //보기버튼 숨기기
-                document.getElementById("open").style.display = "none";
-            }
-
-            function hidetext(){
-                //설명글 숨기기
-                document.getElementById("desc").style.display = "none";
-
-                //보기버튼 숨기기
-                document.getElementById("open").style.display = "block";
-            }
-        </script>
     </div>
+    <script src="./js/flower.js"></script>
 </body>
 </html>
