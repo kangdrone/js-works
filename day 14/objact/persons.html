@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수형 객체 만들기</title>
+    <style>
+        body{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //생성자 함수 객체
+        function person(name, age, isMerride){
+            this.name = name;
+            this.age = age;
+            this.isMerride = isMerride;
+
+            this.info = function(){
+                if(this.isMerride == true)
+                    document.write(this.name + "님은 기혼입니다.<br>");
+                else
+                    document.write(this.name + "님은 미혼입니다.<br>");
+            }
+        }
+        
+        //객체 사용
+        //new + 객체로 p1 객체를 생성함
+        var p1 = new person("고길동", 45, true);
+        var p2 = new person("둘리", 100000000, false);
+
+        document.write("이름 " + p1.name + '<br>');
+        document.write("나이 " + p1.age +'<br>');
+        p1.info();
+
+        document.write("이름 " + p2.name + '<br>');
+        document.write("나이 " + p2.age +'<br>');
+        p2.info();
+    </script>
+</body>
+</html>

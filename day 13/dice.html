@@ -16,7 +16,8 @@
         for(var i = 1; i < 11; i++){
             dice1 = Math.floor(Math.random()*6) + 1;
             dice2 = Math.floor(Math.random()*6) + 1;
-            total = dice1 + dice2
+            total = dice1 + dice2;
+            document.write(total + '<br>');
             //코드 작성
 
             // if(total === 7){
@@ -31,13 +32,13 @@
 
 
             if(total === 7){
-                document.write('Seven Thrown!!');
+                document.write('Seven Thrown!!<br>');
             } 
             if(total === 11){
-                document.write('Seven Thrown!!');
+                document.write('Seven Thrown!!<br>');
             }
             if(dice1 === dice2){
-                document.write('Double Thrown!!');
+                document.write('Double Thrown!!<br>');
             }
 
             // document.write(dice1 + " " + dice2 + '<br>');

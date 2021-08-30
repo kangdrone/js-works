@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정의 객체 만들기</title>
+</head>
+<body>
+    <script>
+        //객체 - 사물(컴퓨터, 책, 사람), 추상화 된 사물(회사, 학원)
+        var person = {  //키(속성) : 값
+            name : "손흥민",
+            age : 30,
+            isMerried : false,
+
+            paly : function(){
+                alert("골을 넣습니다");
+            }
+        }
+        //객체 사용방법
+        //객체이름에 점(.) 연산자로 멤버 변수에 접근
+        document.write("이름 : " +person.name + '<br>');
+        document.write("나이 : " +person.age + '<br>');
+        document.write("결혼 여부 : " +person.isMerried + '<br>');
+
+        //멤버 함수 호출
+        person.paly();
+    </script>
+</body>
+</html>

@@ -51,6 +51,10 @@ push - 맨 뒤에 요소 추가
 indexOf() - 앞에서 찾음
 lastindexOf() - 뒤에서 찾음
 
+함수 관련 명령어
+
+changeBg - 변경(백그라운드)
+
 
 
 cd :/webDev

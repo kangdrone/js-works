@@ -39,6 +39,7 @@
         var day1 = new Date('2021-8-10');
         var today = new Date();
 
+        //1970. 1. 1 지정이후 ~ 지금까지 밀리초(ms-1/1000)로 환산
         var passedTime = today.getTime() - day1.getTime();
         //밀리초를 '일'로 환산
         passedTime = Math.round(passedTime/(24*60*60*1000));

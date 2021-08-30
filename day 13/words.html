@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title>명언 무작위 출력</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- 구글 웹폰트 - CDN방식 - 사이트가 실행되면 글꼴이 다운로드 됨 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+        body{
+            background-color: aqua;
+            color: azure;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.5em;
+            /* font-family: 'Nanum+Pen+Script', cursive; */
+            font-family: 'Nanum Brush Script', cursive;
+        }
+    </style>
 </head>
 <body>
     <script>
-        
+        var words = [];
+
+        words[0] = "당신은 지금도 최고고, 이전에도 최고였으며 앞으로도 최고일 것이다.";
+        words[1] = "성공하는 사람은 실패하는데 익숙한 사람이다.";
+        words[2] = "후회를 최대한 이용하라, 깊이 후회한다는 것은 새로운 삶을 산다는 것이다.";
+        words[3] = "가짜 친구는 소문을 믿고, 진짜 친구는 나를 믿는다.";
+        words[4] = "성공이라는 못을 박으려면 끈질김이라는 망치가 필요하다"
+
+        var rand = Math.floor(Math.random()*words.length);  // rand = 0 ~ 4
+        document.write(words[rand]);
     </script>
 </body>
 </html>

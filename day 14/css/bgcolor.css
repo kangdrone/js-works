@@ -1,0 +1,20 @@
+ul{
+    list-style: none;
+    margin-top: 50px;
+}
+ul li{
+    display: inline;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+div{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 30px 40px;
+}

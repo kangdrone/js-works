@@ -8,24 +8,27 @@
 </head>
 <body>
     <script>
-        // 1 ~ 10 자연수 중 무작위로 출력
+        //math 객체 사용하기
+        //원주율 -PI
+        console.log(Math.PI);
+
+        //절대값
+        console.log(Math.abs(-3));
+
+        //반올림
+        console.log(Math.round(5.71));
+
+        //버림, 내림
+        console.log(Math.floor(2.54));
+
+        //무작위 수(난수) - 0 <= r < 1
+        console.log(Math.random());
+
+
+        // // 1 ~ 10 자연수 중 무작위로 출력
         var rand = Math.floor(Math.random()*10) + 1;
-        document.write(rand + '<br>');
+        console.log(rand);
 
-        //주사위 던지기 - 함수 정의
-        function dice(){
-            var dice = Math.floor(Math.random()*6) + 1;
-            return dice;
-        }
-
-        var dice = Math.floor(Math.random()*6) + 1;
-        // document.write('주사위 눈' + dice + '<br>');
-
-        //주사위 10번 던지기
-        for(var i = 1; i <= 10; i++){
-            var dice = Math.floor(Math.random()*6) + 1;
-            console.log(dice + '<br>');
-        }
     </script>
 </body>
 </html>
