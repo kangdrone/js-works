@@ -21,7 +21,7 @@
 <body>
     <script>
         //생성자 함수 객체
-        function person(name, age, isMerride){
+        function Person(name, age, isMerride){
             this.name = name;
             this.age = age;
             this.isMerride = isMerride;
@@ -36,8 +36,9 @@
         
         //객체 사용
         //new + 객체로 p1 객체를 생성함
-        var p1 = new person("고길동", 45, true);
-        var p2 = new person("둘리", 100000000, false);
+        var p1 = new Person("고길동", 45, true);
+        var p2 = new Person("둘리", 100000000, false);
+        var abc = new Person("도우너", 7, false)
 
         document.write("이름 " + p1.name + '<br>');
         document.write("나이 " + p1.age +'<br>');
@@ -46,6 +47,11 @@
         document.write("이름 " + p2.name + '<br>');
         document.write("나이 " + p2.age +'<br>');
         p2.info();
+
+        document.write("이름 " + abc.name + '<br>');
+        document.write("나이 " + abc.age +'<br>');
+        abc.info();
+        
     </script>
 </body>
 </html>

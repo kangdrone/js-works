@@ -24,15 +24,17 @@
         }
         document.write('<br>')
 
-        //더하기
+        //곱하기
         document.write(numbers[0] + numbers[1] +'<br>');
 
         //전체 합계
         for(var i = 0; i < numbers.length; i++){
             sum += numbers[i];  //sum = sum + unmbers[i]
         }
-        document.write("합계 " + sum);
-
+        
+        avg = sum / numbers.length;
+        document.write("합계 : " + sum + '<br>');
+        document.write("평균 : " + avg + '<br>');
 
     </script>
 </body>
