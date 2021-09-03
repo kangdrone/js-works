@@ -1,0 +1,36 @@
+/* 전체 선택 - 박스 크기 : border-box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 330px;
+    height: 370px;
+    border: 2px solid #00f;
+    border-radius: 10px;
+    margin: 10px auto;
+    position: relative; /* 부모를 상대위치로 설정 */
+}
+h2{
+    padding: 30px 20px;
+}
+b{
+    color: brown;
+}
+p{
+    padding-left: 20px;
+    line-height: 2,5;
+}
+.small{
+    padding-left: 30px;
+    font-size: 0.9em;
+    line-height: 2;
+    margin-top: 10px;
+}
+.close{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+}

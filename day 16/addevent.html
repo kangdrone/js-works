@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener() 사용</title>
+</head>
+<body>
+    <button class="btn">디지털 시계</button>
+    <p id="demo"></p>
+
+    <script>
+        var btn = document.querySelector(".btn")
+        btn.addEventListener('click', displayTime);  //displayTime() 호출 - 괄호 생략
+        //addEventListener() 사용시 'on' 접두사 생략
+
+        function displayTime(){
+            var date = new Date  //날짜 시간 객체 생성
+            var now = date.toLocaleTimeString();  //시간만 가져오기
+            document.getElementById('demo').innerHTML = now;
+
+            setInterval(displayTime, 1000);  //
+        }
+    </script>
+</body>
+</html>
