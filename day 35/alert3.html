@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 객체의 onclick 속성을 사용하기 -->
+    <p id="demo">Click Me</p>
+    <script>
+        p = document.getElementById('demo')
+        p.onclick = sayHello;   //함수의 괄호 생략
+
+        function sayHello(){
+            alert("안녕")
+        }
+    </script>
+</body>
+</html>

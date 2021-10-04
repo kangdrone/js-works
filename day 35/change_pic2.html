@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 이벤트</title>
+</head>
+<body>
+    <div class="content">
+        <img src="./images/coffee-blue.jpg" id="pic" alt="커피잔">
+    </div>
+
+    <script>
+        // 이벤트가 2개 이상인 경우 - addEventListener()함수 사용
+        pic = document.getElementById('pic');
+
+        //마우스 클릭했을 때 이벤트
+        pic.addEventListener("mouseover", function(){   // 주의! on을 생략
+            pic.src = "./images/coffee-pink.jpg";
+        });
+
+        pic.addEventListener("mouseout", function(){
+            pic.src = "./images/coffee-blue.jpg";
+        });
+
+    </script>
+</body>
+</html>

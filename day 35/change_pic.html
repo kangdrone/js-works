@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 이벤트</title>
+</head>
+<body>
+    <div class="content">
+        <img src="./images/coffee-blue.jpg" id="pic" alt="커피잔">
+    </div>
+
+    <script>
+        pic = document.getElementById('pic');
+        //함수 이름이 없는 경우 - 실행 함수
+        pic.onclick = function(){
+          pic.src = "./images/coffee-pink.jpg";
+        };
+
+        //함수 이름이 있는 경우
+        /*pic.onclick = change_pic;   //change_pic 함수 호출
+
+        function change_pic(){
+            pic.src = "./images/coffee-pink.jpg";
+        }*/
+    </script>
+</body>
+</html>

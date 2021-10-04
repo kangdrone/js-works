@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM에서 노드 추가</title>
+</head>
+<body>
+    <ul id='myList'>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <button onclick="addNode(); this.onclick='' ">추가</button>
+    <!-- this.onclick='' 1번만 실행 : 추가되지 않음 -->
+    <script>
+        function addNode(){
+            var node = document.createElement('li');   // createElement() - 태그 요소 추가함수
+            var textNode = document.createTextNode('water');   //createTextNode() - 텍스트 추가 함수
+            node.appendChild(textNode)   // 부모노드에 자식노드 추가함
+            document.getElementById('myList').appendChild(node);   //ul에 li태그 추가함
+        }
+    </script>
+</body>
+</html>

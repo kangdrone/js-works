@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM에 노드 추가하기</title>
+</head>
+<body>
+    <div id="content">
+        <h1>DOM 노드 추가하기</h1>
+        <a href="#" onclick="addP(); this.onclick='' ">더 보기</a>
+        <!-- appP()를 한번만 실행 -->
+        <div id="demo"></div>
+    </div>
+    <script>
+        function addP(){
+            var newP = document.createElement('P');
+            var text = document.createTextNode('안녕하세요 숨겨진 텍스트입니다.')
+            newP.appendChild(text);
+            document.getElementById('demo').appendChild(newP);   // p태그를 부모div에 추가
+        }
+    </script>
+</body>
+</html>
