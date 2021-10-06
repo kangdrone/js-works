@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test() 함수</title>
+</head>
+<body>
+    <p>test() 함수는 일치된 것을 찾으면 true, 못 찾으면 false를 반환한다.<br>
+        정규 표현식과 함께 쓰인다.</p>
+    <button onclick="search()">검색</button>
+    <p id="demo"></p>
+
+    <script>
+        function search(){
+            var str = "The best things in life are free.";
+            var pat = new RegExp('m');   //regExp - 자바스크립트 내장 객체
+            var mat = pat.test(str);   // 결과값은 boolean 값
+            document.getElementById('demo').innerHTML = mat;
+        }
+    </script>
+</body>
+</html>
